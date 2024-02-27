@@ -1,0 +1,39 @@
+<?php echo ($info['htmlHeader']); ?>
+<link rel="stylesheet" href="<?php echo $info['asstsUrl'].$this->asset('/css/common.css'); ?>">
+<link rel="stylesheet" href="<?php echo $info['asstsUrl'].$this->asset('/css/assetInfo.css'); ?>">
+
+<script src="<?php echo $info['asstsUrl'].$this->asset('/js/common.js'); ?>"></script>
+<!--<script src="--><?php //echo $info['asstsUrl'].$this->asset('/js/assetInfo.js'); ?><!--"></script>-->
+<div class="inactive-account-container">
+    <div class="inactive-account-wrapper">
+        <img src="<?php echo $info['asstsUrl']; ?>/images/alert.png" alt="" />
+        <div class="inactive-account-title">
+            아직 회원님의 <br />
+            자산이 남아있어요!
+        </div>
+
+        <div class="inactive-account-content">
+      <span>
+        자산포기각서 다운로드하여 자필 작성 후 <br />
+        스캔하여 자산포기각서 파일을 <br />
+        업로드 해주시면 탈퇴처리가 완료됩니다.
+      </span>
+        </div>
+
+        <div class="inactive-account-button-area">
+
+                <button class="inactive-account-download-button">
+                    <a href="<?php echo WALLET_URL ?>/docfiles/withdrawalDoc_v0.1.pdf" target="_blank">자산포기각서 다운로드
+                    <img src="<?php echo $info['asstsUrl']; ?>/images/download.png" alt="" />
+                    </a>
+                </button>
+
+            <br />
+            <button class="inactive-account-upload-button">
+                <a href="<?php echo WALLET_URL; ?>/control.php/withdrawal/assetinfo/upload">자산포기각서 업로드 하러 가기</a>
+            </button>
+        </div>
+    </div>
+</div>
+
+<?php echo ($info['htmlFooter']); ?>

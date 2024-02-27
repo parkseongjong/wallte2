@@ -1,0 +1,39 @@
+<?php echo ($info['htmlHeader']); ?>
+<link rel="stylesheet" href="<?php echo $info['asstsUrl'].$this->asset('/css/common.css'); ?>">
+<link rel="stylesheet" href="<?php echo $info['asstsUrl'].$this->asset('/css/assetInfoUpload.css'); ?>">
+
+<script src="<?php echo $info['asstsUrl'].$this->asset('/js/common.js'); ?>"></script>
+<script src="<?php echo $info['asstsUrl'].$this->asset('/js/assetInfoUpload.js'); ?>"></script>
+<form name="assetInfoUpload" id="assetInfoUpload" action="#" method="post" autocomplete="off">
+    <div class="inactive-account-container">
+        <div class="inactive-account-wrapper">
+            <div class="inactive-account-title">자산포기각서 업로드 페이지</div>
+
+            <div class="inactive-account-subtitle">
+                자산포기각서 스캔파일을 올려주세요!
+            </div>
+
+            <div class="inactive-account-content">
+                자필 작성 후 스캔하여 자산포기각서 파일을 <br />
+                업로드 해주시면 탈퇴처리가 완료됩니다.
+            </div>
+
+            <div class="inactive-account-file-area">
+                <div class="inactive-account-file">
+                    <input type="file" name="uploadFile" id="upload-input" />
+                    <label for="upload-input" class="upload-label-input">
+                        파일을 업로드 해주세요</label
+                    >
+
+                    <label for="upload-input" class="upload-label">파일 찾기</label>
+                </div>
+            </div>
+
+            <div class="inactive-account-withdraw">
+                <button type="submit">탈퇴 요청 완료</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+<?php echo ($info['htmlFooter']); ?>

@@ -1,0 +1,83 @@
+
+@font-face {
+  font-family: 'NotoSansCJKkr';
+  src: url('NotoSansCJKkr-Thin.eot');
+  src: url('NotoSansCJKkr-Thin.eot?#iefix') format('embedded-opentype'),
+       url('NotoSansCJKkr-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSansCJKkr';
+  src: url('NotoSansCJKkr-Light.eot');
+  src: url('NotoSansCJKkr-Light.eot?#iefix') format('embedded-opentype'),
+       url('NotoSansCJKkr-Light.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSansCJKkr';
+  src: url('NotoSansCJKkr-DemiLight.eot');
+  src: url('NotoSansCJKkr-DemiLight.eot?#iefix') format('embedded-opentype'),
+       url('NotoSansCJKkr-DemiLight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSansCJKkr';
+  src: url('NotoSansCJKkr-Regular.eot');
+  src: url('NotoSansCJKkr-Regular.eot?#iefix') format('embedded-opentype'),
+       url('NotoSansCJKkr-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSansCJKkr';
+  src: url('NotoSansCJKkr-Medium.eot');
+  src: url('NotoSansCJKkr-Medium.eot?#iefix') format('embedded-opentype'),
+       url('NotoSansCJKkr-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSansCJKkr';
+  src: url('NotoSansCJKkr-Bold.eot');
+  src: url('NotoSansCJKkr-Bold.eot?#iefix') format('embedded-opentype'),
+       url('NotoSansCJKkr-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSansCJKkr';
+  src: url('NotoSansCJKkr-Black.eot');
+  src: url('NotoSansCJKkr-Black.eot?#iefix') format('embedded-opentype'),
+       url('NotoSansCJKkr-Black.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'NotoSansMonoCJKkr';
+  src: url('NotoSansMonoCJKkr-Regular.eot');
+  src: url('NotoSansMonoCJKkr-Regular.eot?#iefix') format('embedded-opentype'),
+       url('NotoSansMonoCJKkr-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NotoSansMonoCJKkr';
+  src: url('NotoSansMonoCJKkr-Bold.eot');
+  src: url('NotoSansMonoCJKkr-Bold.eot?#iefix') format('embedded-opentype'),
+       url('NotoSansMonoCJKkr-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+

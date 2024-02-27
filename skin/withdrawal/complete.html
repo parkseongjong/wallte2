@@ -1,0 +1,27 @@
+<?php echo ($info['htmlHeader']); ?>
+<link rel="stylesheet" href="<?php echo $info['asstsUrl'].$this->asset('/css/common.css'); ?>">
+<link rel="stylesheet" href="<?php echo $info['asstsUrl'].$this->asset('/css/withdrawalComplete.css'); ?>">
+
+<script src="<?php echo $info['asstsUrl'].$this->asset('/js/common.js'); ?>"></script>
+    <div class="inactive-account-container">
+        <div class="inactive-account-wrapper">
+            <div class="inactive-account-title">
+                CTC WALLET 회원탈퇴가 <br />
+                안전하게 완료되었습니다.
+            </div>
+
+            <div class="inactive-account-content">
+          <span
+          >그동안 이용해 주셔서 감사드립니다. <br />
+            보다 나은 서비스 제공을 위해 최선을 다하겠습니다.</span
+          >
+            </div>
+
+            <div class="inactive-account-button-area">
+                <button class="inactive-account-home-button">
+                    <a href="<?php echo WALLET_URL; ?>">홈으로</a>
+                </button>
+            </div>
+        </div>
+    </div>
+<?php echo ($info['htmlFooter']); ?>

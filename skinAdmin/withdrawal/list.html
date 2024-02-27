@@ -1,0 +1,95 @@
+<?php echo ($info['htmlHeader']); ?>
+<link rel="stylesheet" href="<?php echo $info['asstsUrl'].$this->asset('/css/common.css'); ?>">
+<link rel="stylesheet" href="<?php echo $info['asstsUrl'].$this->asset('/css/withdrawal.css'); ?>">
+
+<script src="<?php echo $info['asstsUrl'].$this->asset('/js/common.js'); ?>"></script>
+<script src="<?php echo $info['asstsUrl'].$this->asset('/js/withdrawal.js'); ?>"></script>
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-6">
+            <h1 class="page-header">
+                탈퇴 요청 회원 목록
+            </h1>
+        </div>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>고유 ID</th>
+                    <th>사용자 정보</th>
+                    <th>TYPE</th>
+                    <th>반려사유</th>
+                    <th>처리 상태</th>
+                    <th>처리 상태 변동 일시</th>
+                    <th>탈퇴 요청 일시</th>
+                    <th>자산 포기 각서 이미지</th>
+                    <th>자산 포기 각서 이미지 업로드 일시</th>
+                    <th>기능</th>
+                </tr>
+            </thead>
+            <tbody>
+            <?php foreach ($info['listInfo'] as $key => $value): ?>
+                <tr data-id="<?php echo $value['wu_id'] ?>">
+                    <td><?php echo $value['wu_id'] ?>(<?php echo $value['wu_accounts_id'] ?>)</td>
+                    <td><?php echo $value['email'] ?></td>
+                    <td><?php echo $value['wu_type'] ?></td>
+                    <td><?php echo $value['wu_description'] ?></td>
+                    <td>
+                        <?php if(!empty($value['wu_status'])): ?>
+                            <span
+                                    class="badge"
+                            >
+                                <?php echo $value['wu_status'] ?>
+                            </span>
+                        <?php endif; ?>
+                    </td>
+                    <td><?php echo $value['wu_status_datetime'] ?></td>
+                    <td><?php echo $value['wu_datetime'] ?></td>
+                    <td>
+                        <a href="<?php echo WALLET_URL;?>/userfiles/withdrawal/<?php echo $value['wu_target']; ?>.<?php echo $value['wu_image_type']; ?>" target="_blank">
+                            <?php echo $value['wu_target'] ?>
+                        </a>
+                    </td>
+                    <td><?php echo $value['wu_image_datetime'] ?></td>
+                    <td>
+                        <?php if($value['wu_status'] != 'SUCCESS'): ?>
+                            <p><span class="btn btn-warning control" data-type="reject">반려처리</span></p>
+                            <p><span class="btn btn-danger control" data-type="withdrawal">탈퇴처리</span></p>
+                        <?php endif; ?>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+            </tbody>
+        </table>
+        <div class="text-center">
+            <?php
+                //레거시 기반 page nation
+                echo newSetPageList($info['pageNationInfo']['page'], 'control.php/admin/withdrawal', $info['pageNationInfo']['totalPage'], $info['pageNationInfo']['pageRow']); // config/new_config.php
+            ?>
+        </div>
+    </div>
+
+    <div id="rejectModal" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">반려 처리 폼</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" name="rejectMsg" class="form-control" placeholder="반려 사유를 입력해 주세요.">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+                    <button type="button" class="btn btn-warning">반려 처리 확정</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<?php echo ($info['htmlFooter']); ?>

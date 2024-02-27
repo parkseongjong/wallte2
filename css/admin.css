@@ -1,0 +1,142 @@
+
+.well {
+	background-color:inherit;
+	text-align:left;
+}
+
+#page-wrapper {
+	height:auto !important;
+	/*width: 100% !important;*/
+}
+.form-group .form-control {
+	flex-basis: 90%;
+	color: #000;
+	padding: 12px 12px;
+	border: none;
+	box-sizing: border-box;
+	outline: none;
+	letter-spacing: 1px;
+	font-size: 17px;
+	font-weight: 700;
+	border: 1px solid #bbb;
+	background: #e1e1e1;
+	height:auto;
+}
+
+.submit-button {
+	width: 70%;
+	background: rgb(51, 232, 255);
+	outline: none;
+	color: #000;
+	margin: 10px 0px;
+	font-size: 14px;
+	font-weight: 400;
+	border: 1px solid #33e8ff;
+	padding: 11px 11px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	
+}
+
+
+#sendlog_list .sendlog_link {
+	list-style-type: none;
+	padding: 0;
+}
+#sendlog_list .sendlog_link li {
+	display: inline-block;
+	margin: 5px 0;
+	border-right: 1px solid #C0C0C0;
+}
+#sendlog_list .sendlog_link li:last-child {
+	border-right: none;
+}
+#sendlog_list .sendlog_link li a {
+	margin: 0px;
+	padding: 5px 15px;
+	color: #000000;
+}
+#sendlog_list .sendlog_link2 li {
+	display: inline-block;
+	padding: 5px 7px;
+	border-right: 1px solid #C0C0C0;
+	margin: 0;
+}
+#sendlog_list .sendlog_link2 li:last-child {
+	border-right: none;
+}
+#sendlog_list .sendlog_link2 li a {
+	color: #000000;
+}
+
+#sendlog_list .sendlog_link3 {
+	list-style-type: none;
+}
+#sendlog_list .sendlog_link3 li {
+	display: inline-block;
+	padding: 0 10px;
+	border-right: 1px solid #C0C0C0;
+	margin: 0;
+}
+
+#sendlog_list table td.center {
+	text-align: center;
+}
+
+.admin_list_table1 .table-bordered { min-width: 935px; }
+.admin_list_table1 .table-bordered td { word-break: break-all; }
+
+
+.td_cls1 {
+	word-wrap:break-word;word-break:break-all;
+	min-width: 150px;
+}
+.td_cls2 {
+	word-wrap:break-word;word-break:break-all;
+	min-width: 200px;
+}
+
+
+ #admin_sms_form {
+ 	width: 300px;
+	border: 1px solid #000;
+	padding: 10px;
+	box-sizing: border-box;
+ }
+ #admin_sms_form textarea {
+ 	width: 100%;
+ }
+#admin_sms_form .contents_byte {
+	text-align: right;
+ }
+
+
+
+.admin_addpoint .subject {
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-top: 30px;
+}
+.admin_addpoint .warning {
+	list-style-type: circle;
+	padding: 5px 10px;
+	border: 1px solid #C0C0C0;
+}
+.admin_addpoint .warning li {
+	line-height: 1.7rem;
+	margin: 0 20px;
+	padding-left: 5px;
+}
+.admin_addpoint .warning .wr_text {
+	color: #FF0000;
+}
+.admin_addpoint table .wr_text {
+	color: #FF0000;
+}

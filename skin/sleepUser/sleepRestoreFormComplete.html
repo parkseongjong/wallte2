@@ -1,0 +1,28 @@
+<?php echo ($info['htmlHeader']); ?>
+<link rel="stylesheet" href="<?php echo $info['asstsUrl'].$this->asset('/css/common.css'); ?>">
+<link rel="stylesheet" href="<?php echo $info['asstsUrl'].$this->asset('/css/sleepRestoreFormComplete.css'); ?>">
+
+<script src="<?php echo $info['asstsUrl'].$this->asset('/js/common.js'); ?>"></script>
+<script src="<?php echo $info['asstsUrl'].$this->asset('/js/sleepRestoreFormComplete.js'); ?>"></script>
+<div class="inactive-account-modal-container">
+    <div class="inactive-account-modal">
+        <div class="inactive-account-modal-content">
+            <div class="modal-content-header"><?php echo $info['lang']['sleepString04']; ?></div>
+            <div class="modal-content-body">
+                <div class="modal-content-body-texts">
+                    <div class="modal-content-body-text-1">
+                        <?php echo $info['lang']['sleepString08']; ?> <br />
+                        <?php echo $info['lang']['sleepString09']; ?>
+                    </div>
+                    <div class="modal-content-body-text-2">
+                        <?php echo $info['lang']['sleepString10']; ?>
+                    </div>
+                </div>
+                <a href="<?php echo $info['walletUrl']; ?>">
+                    <button class="modal-content-confirm-button"><?php echo $info['lang']['commonString08']; ?></button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<?php echo ($info['htmlFooter']); ?>

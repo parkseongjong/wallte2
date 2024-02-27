@@ -1,0 +1,58 @@
+<?php echo ($info['htmlHeader']); ?>
+<link rel="stylesheet" href="<?php echo $info['asstsUrl'].$this->asset('/css/common.css'); ?>">
+<link rel="stylesheet" href="<?php echo $info['asstsUrl'].$this->asset('/css/otpTutorialComplete.css'); ?>">
+
+<!--<script src="--><?php //echo $info['asstsUrl'].$this->asset('/js/common.js'); ?><!--"></script>-->
+    <div class="inactive-account-container">
+        <div class="inactive-account-wrapper">
+            <div class="inactive-account-title">OTP 인증</div>
+            <div class="inactive-account-title-inner">
+                <strong>STEP2</strong>
+                <p>
+                    다운로드 받은 후, 아래 QR코드를 스캔하거나 <br />
+                    비밀키를 입력하세요.
+                </p>
+            </div>
+            <div class="inactive-account-code">
+                <img src="<?php echo $info['otpSecretKeyQr'] ?>" alt="qr-code" />
+
+            </div>
+
+            <div class="inactive-key-private-container">
+                <div class="inactive-private-key-group">
+                    <div class="inactive-private-key-text" id="private-key">
+                        <?php echo $info['otpSecretKey'] ?>
+                    </div>
+                    <div class="inactive-private-key-copy" id="private-key-button">
+                        비밀키 복사
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="inactive-account-button-wrapper">
+            <div class="inactive-account-button-area">
+                <button class="inactive-account-next-button">
+                    <a href="<?php echo WALLET_URL; ?>/control.php/auth/otp/view/<?php echo $info['loginKey']; ?>">다음</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document
+                .querySelector("#private-key-button")
+                .addEventListener("click", function () {
+                    const copyTarget = document.querySelector("#private-key");
+
+                    const range = document.createRange();
+                    range.selectNode(copyTarget);
+                    window.getSelection().removeAllRanges();
+                    window.getSelection().addRange(range); // to select text
+                    document.execCommand("copy");
+                    // window.getSelection().removeAllRanges();// to deselect
+                });
+        });
+    </script>
+<?php echo ($info['htmlFooter']); ?>

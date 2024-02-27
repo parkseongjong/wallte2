@@ -1,0 +1,91 @@
+.inactive-account-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.inactive-account-container * {
+    box-sizing: border-box;
+    border-width: 0px;
+    border-style: solid;
+}
+
+.inactive-account-container .inactive-account-wrapper {
+    padding: 20px 30px 30px;
+    text-align: center;
+}
+
+.inactive-account-container .inactive-account-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 15px 0 30px;
+}
+
+.inactive-account-container .inactive-account-subtitle {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #4d4d4d;
+}
+
+.inactive-account-container .inactive-account-content {
+    margin-top: 15px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #4d4d4d;
+}
+
+.inactive-account-container .inactive-account-file {
+    margin-top: 80px;
+}
+
+.inactive-account-container .inactive-account-file #upload-input {
+    display: none;
+}
+
+.inactive-account-container .inactive-account-file .upload-input {
+    width: 400px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+.inactive-account-container .inactive-account-file .upload-label-input {
+    display: inline-block;
+    width: 100%;
+    padding: 15px 0 15px 15px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    border: 1px solid #bfbfbf;
+    color: #b9b9b9;
+    text-align: left;
+}
+
+.inactive-account-container .inactive-account-file .upload-label {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    border: 1px solid #000;
+    margin: 10px 0 30px;
+    background-color: #f0f0f0;
+}
+
+.inactive-account-container .inactive-account-withdraw > button {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    background-color: #ffea61;
+    margin-bottom: 14px;
+}
+
+.inactive-account-container .inactive-account-withdraw > button[disabled] {
+    background-color: gray;
+}

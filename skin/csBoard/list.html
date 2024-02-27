@@ -1,0 +1,55 @@
+
+<?php echo ($info['htmlHeader']); ?>
+
+<link rel="stylesheet" href="<?php echo $info['asstsUrl'].$this->asset('/css/common.css'); ?>">
+<!--<script src="<?php //echo $info['asstsUrl'].$this->asset('/js/script.js'); ?>"></script>-->
+<div id="page-wrapper">
+    <?php foreach ($info['data'] as $value): ?>
+        <?php echo $value['hash'] ?>
+    <?php endforeach; ?>
+    <article id="csBoardList" class="contentsWrap">
+        <div class="contents container-fluid">
+            <ul>
+                <li>
+                    <section class="card mb-3">
+                        <div class="row no-gutters">
+                            <div class="col-12">
+                                <div class="card-body">
+                                    <h2 class="card-title">
+                                        제목
+                                    </h2>
+                                    <div class="card-text">
+                                        <section class="info">
+                                            <ul class="contents left">
+                                                <li>
+                                                    <h4>블라블라</h4>
+                                                    <span>블라블라</span>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card-body">
+                                    <section class="info">
+                                        <ul class="contents left">
+                                            <li>
+                                                <h4 class="textHit">상태</h4>
+                                                <span>답변 완료?</span>
+                                            </li>
+                                            <li>
+                                                <h4 class="textHit">일시</h4>
+                                                <span>2020-01-01 11:11:11</span>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </li>
+            </ul>
+        </div>
+    </article>
+</div>

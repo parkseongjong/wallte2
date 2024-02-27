@@ -1,0 +1,1 @@
+<script src="<?php echo WALLET_URL; ?>/js/admin/common.js"></script>

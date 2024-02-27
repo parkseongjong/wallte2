@@ -1,0 +1,75 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.inactive-account-modal-container {
+  color: #000;
+  position: relative;
+  height: 100vh;
+}
+
+.inactive-account-modal-container * {
+  box-sizing: border-box;
+  border-width: 0px;
+  border-style: solid;
+}
+
+.inactive-account-modal-container button {
+  outline: none;
+  cursor: pointer;
+}
+
+.inactive-account-modal-container .inactive-account-modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.inactive-account-modal-container .inactive-account-modal .inactive-account-modal-content {
+  background-color: #fff;
+  margin-bottom: 130px;
+}
+
+.inactive-account-modal-container .inactive-account-modal .inactive-account-modal-content .modal-content-header {
+  padding: 15px 0;
+  border-color: #9a9a9a;
+  border-bottom-width: 2px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.inactive-account-modal-container .inactive-account-modal .inactive-account-modal-content .modal-content-body {
+  padding: 60px 20px 16px;
+}
+
+.inactive-account-modal-container .inactive-account-modal .inactive-account-modal-content .modal-content-body .modal-content-body-texts {
+  color: #4d4d4d;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 60px;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.inactive-account-modal-container .inactive-account-modal .inactive-account-modal-content .modal-content-body .modal-content-body-texts .modal-content-body-text-1 {
+  margin-bottom: 20px;
+}
+
+.inactive-account-modal-container .inactive-account-modal .inactive-account-modal-content .modal-content-body .modal-content-confirm-button {
+  width: 100%;
+  background-color: #ffea61;
+  padding: 15px 0;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 700;
+}

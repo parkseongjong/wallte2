@@ -1,0 +1,78 @@
+<?php echo ($info['htmlHeader']); ?>
+<link rel="stylesheet" href="<?php echo $info['asstsUrl'].$this->asset('/css/common.css'); ?>">
+
+<script src="<?php echo $info['asstsUrl'].$this->asset('/js/common.js'); ?>"></script>
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-6">
+            <h1 class="page-header">
+                유저 로그
+            </h1>
+        </div>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>고유 ID</th>
+                    <th>채널</th>
+                    <th>위험도</th>
+                    <th>실행자 고유 ID</th>
+                    <th>목표  고유 ID</th>
+                    <th>URI</th>
+                    <th>행위</th>
+                    <th>에이전트</th>
+                    <th>IP</th>
+                    <th>메시지</th>
+                    <th>일시</th>
+                </tr>
+            </thead>
+            <tbody>
+            <?php foreach ($info['listInfo'] as $key => $value): ?>
+                <tr data-id="<?php echo $value['id'] ?>">
+                    <td><?php echo $value['id'] ?></td>
+                    <td><?php echo $value['channel'].'(<span class="badge">'.$value['channelBuild'].'</span>)' ?></td>
+                    <td><?php echo $value['log_level'].'(<span class="badge">'.$value['logLevelBuild'].'</span>)' ?></td>
+                    <td><?php echo $value['user_id'] ?></td>
+                    <td><?php echo $value['target_id'] ?></td>
+                    <td><?php echo $value['url'] ?></td>
+                    <td><?php echo $value['action'].'(<span class="badge">'.$value['actionBuild'].'</span>)' ?></td>
+                    <td><?php echo $value['user_agent'] ?></td>
+                    <td><?php echo $value['user_ip'] ?></td>
+                    <td><?php echo $value['description'] ?></td>
+                    <td><?php echo $value['created'] ?></td>
+                </tr>
+            <?php endforeach; ?>
+            </tbody>
+        </table>
+        <div class="text-center">
+            <?php
+                //레거시 기반 page nation
+                echo newSetPageList($info['pageNationInfo']['page'], 'control.php/admin/user/log', $info['pageNationInfo']['totalPage'], $info['pageNationInfo']['pageRow']); // config/new_config.php
+            ?>
+        </div>
+    </div>
+
+    <div id="rejectModal" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">반려 처리 폼</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" name="rejectMsg" class="form-control" placeholder="반려 사유를 입력해 주세요.">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+                    <button type="button" class="btn btn-warning">반려 처리 확정</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<?php echo ($info['htmlFooter']); ?>

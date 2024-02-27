@@ -1,0 +1,28 @@
+{
+    "name": "Cybertronchain Api Documentation",
+    "version": "1.0.0",
+    "title": "Cybertronchain Api Documentation",
+    "url" : "/wallet2/v1",
+    "sampleUrl": true,
+    "header": {
+        "title": "Introduction",
+        "filename": "header.md"
+    },
+    "order": [
+
+        "Google-Admob",
+        "Google-Admob-Check",
+        "Google-Purchase",
+
+        "User-Info",
+        "User-Paid",
+        "User-Free"
+    ],
+    "template": {
+        "showRequiredLabels" : true,
+        "withCompare" : true,
+        "withGenerator" : true,
+        "aloneDisplay" : true
+    }
+}
+

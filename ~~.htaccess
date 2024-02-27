@@ -1,0 +1,4 @@
+#RewriteEngine on
+#RewriteCond %{HTTPS} on
+#RewriteCond %{HTTP_HOST} ^139\.162\.28\.204$
+#RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]

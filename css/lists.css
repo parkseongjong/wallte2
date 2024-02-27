@@ -1,0 +1,37 @@
+.well {
+	background-color:inherit;
+	text-align:left;
+}
+
+#page-wrapper {
+	height:auto !important;
+}
+
+.user_table_new thead tr th {
+	background-color: #66676C;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.user_table_new .word_fixed {
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+.user_table_new .align_center {
+	text-align: center;
+}
+
+
+
+.admin_table_new thead tr th {
+	background-color: #F8FAFD;
+	text-align: center;
+}
+.admin_table_new .word_fixed {
+	word-break: break-all;
+	word-wrap: break-word;
+}
+.admin_table_new .align_center {
+	text-align: center;
+}

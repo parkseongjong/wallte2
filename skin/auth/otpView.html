@@ -1,0 +1,48 @@
+<?php echo ($info['htmlHeader']); ?>
+<link rel="stylesheet" href="<?php echo $info['asstsUrl'].$this->asset('/css/common.css'); ?>">
+<link rel="stylesheet" href="<?php echo $info['asstsUrl'].$this->asset('/css/otpView.css'); ?>">
+<script src="<?php echo $info['asstsUrl'].$this->asset('/js/common.js'); ?>"></script>
+<script src="<?php echo $info['asstsUrl'].$this->asset('/js/otpView.js'); ?>"></script>
+<script>
+    //global javascript variable.
+    $(function($) {
+        window.walletGlobalObj.otpAuthKey = '<?php echo $info['loginKey'] ?>';
+    });
+</script>
+    <div class="inactive-account-container">
+        <div class="inactive-account-wrapper">
+            <div class="inactive-account-logo">
+                <img src="<?php echo $info['asstsUrl']; ?>/images/logo.png" alt="" />
+            </div>
+
+            <div class="inactive-account-login">
+                <form name="otpAuthUpload" id="otpAuthUpload" action="#" method="post" autocomplete="off">
+                    <strong>2차 인증</strong>
+                    <input type="password" id="password" name="password" placeholder="OTP 번호를 입력해주세요." required/>
+                    <button type="submit" class="inactive-account-login-button">로그인</button>
+                </form>
+            </div>
+
+            <div class="inactive-account-otp-wrap">
+                <div class="inactive-account-otp">
+                    <span>OTP가 없다면?</span>
+                    <a href="<?php echo WALLET_URL; ?>/control.php/auth/otp/tutorial/<?php echo $info['loginKey'] ?>">
+                        <strong style="line-height: 2.2">OTP 발급하러 가기</strong>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="inactive-account-join">
+                <ul>
+                    <li>
+                        <a href="<?php echo WALLET_URL; ?>/register_agree.php">회원가입</a>
+                    </li>
+                    <span></span>
+                    <li>OTP 재설정</li>
+                    <i>VER 2.0</i>
+                </ul>
+            </div>
+        </div>
+    </div>
+<?php echo ($info['htmlFooter']); ?>

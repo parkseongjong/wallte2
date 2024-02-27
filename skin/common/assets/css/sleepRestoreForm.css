@@ -1,0 +1,89 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.inactive-account-container {
+  color: #000;
+  height: 100%;
+}
+
+.inactive-account-container * {
+  box-sizing: border-box;
+  border-width: 0px;
+  border-style: solid;
+}
+
+.inactive-account-container .inactive-account-wrapper {
+  padding: 80px 30px 30px;
+  max-width: 500px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.inactive-account-container .inactive-account-wrapper .inactive-account-title {
+  font-size: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  border-color: #e5e5e5;
+  border-bottom-width: 1px;
+  font-weight: 700;
+}
+
+.inactive-account-container .inactive-account-wrapper .inactive-account-subtitle {
+  font-size: 12px;
+  color: #4d4d4d;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.inactive-account-container .inactive-account-wrapper .inactive-account-info-title {
+  background-color: #f1f1f1;
+  border-color: #9a9a9a;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  text-align: center;
+  font-size: 16px;
+  padding: 15px 0;
+  font-weight: 700;
+  margin-bottom: 26px;
+}
+
+.inactive-account-container .inactive-account-wrapper .inactive-account-info-subtitle {
+  font-size: 10.5px;
+  line-height: 2;
+  text-align: center;
+  margin-bottom: 100px;
+  flex: 1;
+}
+
+.inactive-account-container .inactive-account-wrapper .inactive-account-info-subtitle > span {
+  display: block;
+}
+
+.inactive-account-container .inactive-account-wrapper .inactive-account-button-area > button {
+  width: 100%;
+  padding: 20px 0;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+}
+
+.inactive-account-container .inactive-account-wrapper .inactive-account-button-area .inactive-account-release-button {
+  background-color: #ffea61;
+  margin-bottom: 14px;
+}
+
+.inactive-account-container .inactive-account-wrapper .inactive-account-button-area .inactive-account-cancel-button {
+  background-color: #ababab;
+  border-color: #b4b4b4;
+  border-width: 1px;
+  color: #fff;
+}

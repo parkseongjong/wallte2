@@ -1,0 +1,57 @@
+.inactive-account-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.inactive-account-container * {
+    box-sizing: border-box;
+    border-width: 0px;
+    border-style: solid;
+    text-align: center;
+}
+
+.inactive-account-container .inactive-account-wrapper {
+    padding: 80px 30px 30px;
+}
+
+.inactive-account-container .inactive-account-wrapper > img {
+    width: 90px;
+}
+
+.inactive-account-container .inactive-account-wrapper .inactive-account-title {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.inactive-account-container .inactive-account-wrapper .inactive-account-content {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #4d4d4d;
+}
+
+.inactive-account-container .inactive-account-wrapper .inactive-account-button-area > button {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+}
+
+.inactive-account-container .inactive-account-wrapper .inactive-account-button-area .inactive-account-download-button {
+    background-color: #ffea61;
+    margin: 30px 0 14px;
+}
+
+.inactive-account-container .inactive-account-wrapper .inactive-account-button-area .inactive-account-download-button > img {
+    width: 25px;
+    vertical-align: middle;
+}
+
+.inactive-account-container .inactive-account-wrapper .inactive-account-button-area .inactive-account-upload-button {
+    background-color: #f0f0f0;
+    border-color: #b4b4b4;
+    border-width: 1px;
+}

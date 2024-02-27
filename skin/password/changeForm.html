@@ -1,0 +1,29 @@
+
+<?php echo ($info['htmlHeader']); ?>
+<link rel="stylesheet" href="<?php echo $info['asstsUrl'].$this->asset('/css/common.css'); ?>">
+<script src="<?php echo $info['asstsUrl'].$this->asset('/js/changeFrom.js'); ?>"></script>
+<div id="page-wrapper">
+    <article id="passwordChangeForm" class="contentsWrap">
+        <div class="contents container-fluid">
+            <div class="alert alert-info">
+                <p><?php echo $info['lang']['passwordChangeString01']; ?></p>
+                <p><?php echo $info['lang']['passwordChangeString02']; ?></p>
+            </div>
+            <form name="passwordChangeForm" id="passwordChangeForm" action="#" method="post" autocomplete="off">
+                <div class="form-group">
+                    <input type="password" id="plainWord" name="plainWord" class="form-control" title="<?php echo $info['lang']['passwordChangeStringDanger01']; ?>" required="required" placeholder="<?php echo $info['lang']['passwordChangeString03']; ?>">
+                </div>
+                <div class="form-group">
+                    <input type="password" id="plainWordCheck" class="form-control" title="<?php echo $info['lang']['passwordChangeStringDanger01']; ?>" required="required" placeholder="<?php echo $info['lang']['passwordChangeString05']; ?>">
+                </div>
+                <div id="plainWordMsg" class="alert alert-warning hidden">
+
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-block btn-primary"><?php echo $info['lang']['passwordChangeString04']; ?></button>
+                </div>
+            </form>
+        </div>
+    </article>
+</div>
+<?php echo ($info['htmlFooter']); ?>

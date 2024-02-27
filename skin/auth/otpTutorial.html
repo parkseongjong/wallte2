@@ -1,0 +1,47 @@
+<?php echo ($info['htmlHeader']); ?>
+<link rel="stylesheet" href="<?php echo $info['asstsUrl'].$this->asset('/css/common.css'); ?>">
+<link rel="stylesheet" href="<?php echo $info['asstsUrl'].$this->asset('/css/otpTutorial.css'); ?>">
+
+<!--<script src="--><?php //echo $info['asstsUrl'].$this->asset('/js/common.js'); ?><!--"></script>-->
+    <div class="inactive-account-container">
+        <div class="inactive-account-wrapper">
+            <div class="inactive-account-title">OTP 인증</div>
+            <div class="inactive-account-title-inner">
+                <strong>STEP 1</strong>
+                <p>OTP앱을 스마트폰에 다운로드 받는다.</p>
+            </div>
+
+            <div class="inactive-account-otp">
+                <div class="inactive-account-google">
+                    <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=ko&gl=US" target="_blank" rel="noopenner">
+                        <img src="<?php echo $info['asstsUrl']; ?>/images/google.png" alt="google" />
+                    </a>
+                    <p class="inactive-account-otp-text">
+                        안드로이드는 <strong>Google OTP</strong>를 검색 후 <br />
+                        다운로드 하세요
+                    </p>
+                </div>
+
+                <div class="inactive-account-app">
+                    <a href="https://apps.apple.com/us/app/google-authenticator/id388497605" target="_blank" rel="noopenner">
+                        <img src="<?php echo $info['asstsUrl']; ?>/images/appstore.png" alt="appstore" />
+                    </a>
+                    <p class="inactive-account-otp-text">
+                        아이폰은 <strong>Google Authenticator</strong>를 <br />
+                        검색 후 다운로드 하세요
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="inactive-account-button-wrapper">
+            <div class="inactive-account-button-area">
+                <button class="inactive-account-next-button">
+                    <a href="<?php echo WALLET_URL; ?>/control.php/auth/otp/tutorial/complete/<?php echo $info['loginKey'] ?>">
+                        다음
+                    </a>
+                </button>
+            </div>
+        </div>
+    </div>
+<?php echo ($info['htmlFooter']); ?>

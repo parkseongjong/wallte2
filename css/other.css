@@ -1,0 +1,140 @@
+html, body {
+	height: 100%;
+}
+body {-webkit-text-size-adjust: none;-moz-text-size-adjust: none;-ms-text-size-adjust: none; -o-text-size-adjust: none;}
+
+.set_transferpw_frm {
+	width: 100vw;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+.set_transferpw_frm .top {
+	background-color: #FFEB61;
+	min-height: 50%;
+	text-align: center;
+	padding: 15% 10px 0;
+}
+
+.set_transferpw_frm .subject {
+	color: #000000;
+	font-size: 1.561rem;
+	font-weight: bold;
+}
+
+.set_transferpw_frm .explain {
+	color: #000000;
+	font-size: 1.05rem;
+	margin-top: 17.3px;
+	font-weight: normal;
+}
+.set_transferpw_frm .explain2 {
+	color: #FF0000;
+	font-size: 1.05rem;
+	margin-top: 17.3px;
+	font-weight: normal;
+}
+
+.set_transferpw_frm .password_area {
+	margin-top: 52.5px;
+	padding-bottom: 36px;
+}
+.set_transferpw_frm .password_area span img {
+	width: 25px;
+	height: auto;
+}
+.set_transferpw_frm .password_area span {
+	display: inline-block;
+	margin-left: 10.8px;
+}
+.set_transferpw_frm .password_area span:nth-child(1) {
+	margin-left: 0px !important;
+}
+
+
+.set_transferpw_frm .number {
+	height: 50%;
+}
+.set_transferpw_frm .number p {
+	width: 33%;
+	display: inline-block;
+	text-align: center;
+	box-sizing: border-box;
+	height: 24%;
+	cursor: pointer;
+	margin: 0;
+	position: relative;
+}
+.set_transferpw_frm .number p span {
+	/*color: #000000;
+	font-size: 2.275rem;
+	font-weight: normal;*/
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform:translateY(-50%);
+	width: 100%;
+}
+/*
+.set_transferpw_frm .number p span.re {
+	color: #000000;
+	font-size: 1.295rem;
+	font-weight: normal;
+}*/
+.none {
+	display: none;
+}
+
+@media only screen and (max-width: 767px) {
+	.set_transferpw_frm .number p img {
+		width: auto;
+		height: 24px;
+	}
+	.set_transferpw_frm .number .del img {
+		width: 8.61vw;
+		height: auto;
+	}
+	.set_transferpw_frm .number .re img {
+		width: 13.2vw;
+		height: auto;
+	}
+}
+@media (min-width: 768px) {
+	.set_transferpw_frm .number p img {
+		width: auto;
+		height: 24px;
+	}
+	.set_transferpw_frm .number .del img {
+		width: 31px;
+		height: auto;
+	}
+	.set_transferpw_frm .number .re img {
+		width: 47.8px;
+		height: auto;
+	}
+}
+
+#stf_message_btn {
+	padding-bottom: 28px;
+}
+#stf_message_btn a {
+	border: 1px solid #050001;
+	padding: 9.5px 20.8px;
+	position: relative;
+}
+#stf_message_btn img {
+	width: 10px;
+	height: auto;
+	margin-right: 15px;
+	position: absolute;
+	top: 50%;
+	left: 20.8px;
+	transform:translateY(-50%);
+}
+#stf_message_btn span {
+	font-size: 1.12rem;
+	color: #000000;
+	font-weight: 500;
+	padding-left: 20.8px;
+}
+

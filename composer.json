@@ -1,0 +1,47 @@
+{
+  "name": "furqansiddiqui/erc20-php",
+  "type": "library",
+  "description": "Interact with any ERC20 standard Ethereum token",
+  "keywords": ["erc20", "token", "tokens", "ethereum", "geth", "ethereum-go", "eth"],
+  "license": "MIT",
+  "require": {
+    "php": ">=7.4",
+    "furqansiddiqui/ethereum-rpc": ">=0.1.1",
+    "spomky-labs/otphp": "v11.0.x-dev",
+    "pachico/magoo": "2.2.0",
+    "league/plates": "3.4.0",
+    "psr/http-server-middleware": "1.0.1",
+    "psr/http-server-handler": "1.0.1",
+    "slim/psr7": "1.4",
+    "slim/slim": "4.6.0",
+    "ezyang/htmlpurifier": "4.13.0",
+    "webmozart/assert": "1.9.1",
+    "doctrine/dbal": "2.13.1",
+    "php-di/slim-bridge": "dev-master",
+    "ext-openssl": "*",
+    "ext-json": "*",
+    "ext-curl": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "ERC20\\": ["src"],
+      "wallet\\ctcCsBoard\\": "lib/ctcCsBoard",
+      "wallet\\ctcDbDriver\\": "lib/ctcDbDriver",
+      "wallet\\common\\": "lib/common",
+      "wallet\\sleep\\": "lib/sleep",
+      "wallet\\user\\": "lib/user",
+      "wallet\\encrypt\\": "lib/ctcEncrypt",
+      "wallet\\withdrwal\\": "lib/withdrawal",
+      "wallet\\exception\\": "lib/exception",
+      "control\\handlers\\": "lib/control/handlers",
+      "control\\controller\\auth\\": "lib/control/controller/auth",
+      "control\\controller\\barry\\": "lib/control/controller/barry",
+      "control\\controller\\policy\\": "lib/control/controller/policy",
+      "control\\controller\\admin\\": "lib/control/controller/admin",
+      "control\\controller\\usdt\\": "lib/control/controller/usdt",
+      "control\\controller\\maintenance\\": "lib/control/controller/maintenance",
+      "barry\\encrypt\\": "/var/www/ctc/apis/barry/barryEncrypt"
+    }
+  },
+  "minimum-stability": "dev"
+}

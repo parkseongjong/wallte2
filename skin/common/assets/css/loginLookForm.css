@@ -1,0 +1,51 @@
+.inactive-account-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.inactive-account-container * {
+  box-sizing: border-box;
+  border-width: 0px;
+  border-style: solid;
+  text-align: center;
+}
+
+.inactive-account-container .inactive-account-wrapper {
+  padding: 120px 30px 30px;
+}
+
+.inactive-account-container .inactive-account-wrapper .inactive-account-title {
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+
+.inactive-account-container .inactive-account-wrapper .inactive-account-content-area {
+  font-size: 12px;
+  line-height: 1.5;
+  padding-bottom: 40px;
+  color: #4d4d4d;
+}
+
+.inactive-account-container .inactive-account-wrapper .inactive-account-content {
+  display: block;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-top: 15px;
+  color: #4d4d4d;
+}
+
+.inactive-account-container .inactive-account-wrapper .inactive-account-button-area > button {
+  width: 100%;
+  padding: 15px 0;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+}
+
+.inactive-account-container .inactive-account-wrapper .inactive-account-button-area .inactive-account-home-button {
+  background-color: #ffea61;
+  margin-bottom: 14px;
+}

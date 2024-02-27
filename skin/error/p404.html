@@ -1,0 +1,118 @@
+<div class="not-found-container">
+    <div class="not-found">
+        <div class="p404-title">
+            <?php if($info['code'] == 406 || $info['code'] == 403): ?>
+            <?php echo $info['code']; ?>
+            <?php else: ?>
+            404
+            <?php endif; ?>
+        </div>
+        <div class="p404-subtitle">
+            <?php if($info['code'] == 406 || $info['code'] == 403): ?>
+            <?php echo $info['msg']; ?>
+            <?php else: ?>
+            요청하신 페이지를 찾을 수 없습니다.
+            <?php endif; ?>
+            <!-- EN: Sorry, we were unable to find that page -->
+        </div>
+        <!-- EN에선 p404-subtitle2 제거 -->
+        <div class="p404-subtitle2">
+            <?php if($info['code'] == 406 || $info['code'] == 403): ?>
+            <?php echo $info['code']; ?>
+            <?php elseif($info['code'] == 200): ?>
+            <div><?php echo $info['msg']; ?></div>
+            <?php else: ?>
+            <div>요청하신 페이지는 제거되었거나 이름이 변경되어 사용할 수 없습니다.</div>
+            <div>입력하신 페이지의 주소가 정확한지 다시 한번 확인해 주세요.</div>
+            <?php endif; ?>
+        </div>
+        <a href="/" class="back-button-wrap">
+            <button class="back-button">
+                Back to CTC Wallet
+            </button>
+        </a>
+    </div>
+</div>
+
+<style>
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.not-found-container {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-image: url('<?php echo $info['asstsUrl']?>/images/not-found-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.not-found-container .not-found {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.not-found-container .not-found .p404-title {
+    font-size: 72px;
+    margin-bottom: 16px;
+}
+
+.not-found-container .not-found .p404-subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.not-found-container .not-found .p404-subtitle2 {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.not-found-container .not-found .back-button-wrap {
+    margin-bottom: 100px;
+}
+
+.not-found-container .not-found .back-button {
+    background-color: rgba(255, 234, 97, 0.8);
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 20px;
+    border: none;
+    color: #fff;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media (max-width: 990px) {
+    .not-found-container {}
+
+    .not-found-container .not-found {
+        padding: 0 15px;
+    }
+
+    .not-found-container .not-found .p404-title {}
+
+    .not-found-container .not-found .p404-subtitle {
+        font-size: 16px;
+    }
+
+    .not-found-container .not-found .p404-subtitle2 {
+        font-size: 12px;
+    }
+
+    .not-found-container .not-found .back-button {}
+}
+</style>
